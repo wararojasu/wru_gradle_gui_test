@@ -96,7 +96,7 @@ public class MySteps {
 		UserInfoPage user = new UserInfoPage(this.driver);
 		String findName = map.get("user_age");
 		boolean element = user.userAgeText(findName);
-		Assert.assertEquals(element, true);
+		Assert.assertEquals(element, false);
 		driver.quit();
 	}	  
 }
